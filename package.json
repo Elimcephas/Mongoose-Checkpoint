@@ -1,0 +1,20 @@
+{
+  "name": "mongoose-checkpoint",
+  "version": "1.0.0",
+  "description": "MongoDB and Mongoose checkpoint exercises",
+  "main": "myApp.js",
+  "scripts": {
+    "start": "node myApp.js",
+    "test": "echo \"Add your test runner\"; exit 0"
+  },
+  "keywords": [
+    "mongoose",
+    "mongodb"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.10.0",
+    "mongoose": "^9.6.2"
+  }
+}
