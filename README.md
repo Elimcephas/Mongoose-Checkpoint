@@ -18,4 +18,4 @@ npm install
 npm start
 ```
 
-The entry file is `myApp.js`. Exported helpers match the checkpoint tasks (`createAndSavePerson`, `createManyPeople`, etc.).
+Then open **http://localhost:3000** in your browser (see `server.js`). Checkpoint logic and exports live in **`myApp.js`** (`createAndSavePerson`, `createManyPeople`, etc.). Use **`npm run mongoose-only`** if you only want to load `myApp.js` without the web server.
