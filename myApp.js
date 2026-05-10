@@ -30,7 +30,8 @@ const personSchema = new mongoose.Schema({
   favoriteFoods: [{ type: String }],
 });
 
-const Person = mongoose.model('Person', personSchema);
+// Reuse the model if the file is loaded twice (e.g. hot reload / test runners); registering twice throws OverwriteModelError.
+const Person = mongoose.models.Person || mongoose.model('Person', personSchema);
 
 /**
  * Create and Save a Record of a Model
